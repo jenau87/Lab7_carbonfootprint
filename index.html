@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="info">
+            <h1>Carbon Footprint Calculator</h1>
+            <p>This calculator helps you estimate your carbon footprint based on your lifestyle choices.</p>
+        </div>
+        <form id="carbon-calculator">
+            <div class="category">
+                <h2>Clothing</h2>
+                <label for="clothing-pieces">Enter number of clothing pieces purchased annually:</label>
+                <input type="number" id="clothing-pieces" required>
+                <label for="clothing-life">Enter average lifespan of your clothes in years:</label>
+                <input type="number" id="clothing-life" required>
+            </div>
+            <div class="category">
+                <h2>Food</h2>
+                <label for="meat-days">Enter number of days you consume meat in a week:</label>
+                <input type="number" id="meat-days" required>
+                <label for="vegetable-days">Enter number of days you consume vegetables in a week:</label>
+                <input type="number" id="vegetable-days" required>
+            </div>
+            <div class="category">
+                <h2>Transport/Travel</h2>
+                <label for="car-km">Enter number of kilometers traveled by car annually:</label>
+                <input type="number" id="car-km" required>
+                <label for="public-transport-days">Enter number of days you use public transport in a week:</label>
+                <input type="number" id="public-transport-days" required>
+            </div>
+            <div class="category">
+                <h2>Living</h2>
+                <label for="electricity">Enter monthly electricity usage in kWh:</label>
+                <input type="number" id="electricity" required>
+                <label for="aircon-hours">Enter average daily air conditioner usage in hours:</label>
+                <input type="number" id="aircon-hours" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
